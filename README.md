@@ -1,4 +1,3 @@
-# chihuawow-grooming-sql-database
 # Chihuawow Grooming SQL Database
 
 ## Project Overview
