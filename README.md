@@ -1,58 +1,125 @@
-# Chihuawow Grooming SQL Database
+# 🐶 Chihuawow Grooming SQL Database
 
-## Project Overview
+A relational database designed for a fictional dog grooming salon, **Chihuawow Grooming**, to streamline appointment scheduling, customer management, pet records, and business reporting.
 
-This project was developed as part of IDS 410 at the University of Illinois Chicago.
+Developed as part of **IDS 410 – Database Systems** at the **University of Illinois Chicago**, this project demonstrates database design principles, SQL querying, normalization, and business analytics.
 
-The goal was to design and implement a relational database for a fictional pet grooming business, Chihuawow Grooming, to manage customers, pets, services, and appointments.
+---
 
-The database supports day-to-day business operations while also enabling analytical reporting and business insights.
+## 📌 Project Overview
 
-## Features
+Managing a pet grooming business involves much more than scheduling appointments. Groomers need to track customer information, pet profiles, grooming services, appointment history, and revenue while ensuring data remains organized and consistent.
 
-- Customer management
-- Pet information tracking
-- Service catalog management
-- Appointment scheduling
-- Revenue reporting
-- Customer analytics
+This project designs and implements a fully normalized relational database capable of supporting daily operations and providing actionable business insights through SQL.
 
-## Database Structure
+---
 
-The database consists of four relational tables:
+## 🎯 Business Objectives
 
-- Customer_T
-- Pet_T
-- Service_T
-- Appointment_T
+The database was built to help Chihuawow Grooming:
 
-Relationships include:
+- Manage customer records
+- Store pet information and behavioral notes
+- Organize grooming services and pricing
+- Schedule appointments
+- Track completed, canceled, and no-show appointments
+- Monitor revenue
+- Analyze customer spending and service demand
+
+---
+
+## 🗂 Database Schema
+
+The database consists of four related tables:
+
+| Table | Purpose |
+|--------|---------|
+| **Customer_T** | Stores customer contact information |
+| **Pet_T** | Stores pet details and links each pet to its owner |
+| **Service_T** | Stores grooming services, pricing, and duration |
+| **Appointment_T** | Tracks appointments, status, timestamps, and revenue |
+
+### Relationships
 
 - One customer can own multiple pets.
-- One pet can have multiple appointments.
-- One service can be associated with many appointments.
+- One pet can have many appointments.
+- One grooming service can be performed during many appointments.
 
-## Technologies Used
+This design follows relational database principles using **Primary Keys** and **Foreign Keys** to maintain referential integrity.
+
+---
+
+## 💻 SQL Concepts Demonstrated
+
+- INNER JOINs
+- Aggregate Functions
+- GROUP BY
+- HAVING
+- ORDER BY
+- TOP
+- Subqueries
+- UNION Operations
+- Business Reporting Queries
+- Relational Database Design
+- Entity Relationship Diagram (ERD)
+- Database Normalization
+
+---
+
+## 📊 Business Questions Answered
+
+The SQL queries answer real business questions, including:
+
+- 🏆 Which customer has spent the most money?
+- 💰 What is the total monthly revenue?
+- ✂️ Which grooming services are booked most frequently?
+- ⭐ Which customers qualify as VIP customers?
+- 🐶 Which customers have never scheduled an appointment?
+- 📅 How many appointments were completed, canceled, or marked as no-shows?
+
+These queries demonstrate how SQL can transform operational data into meaningful business insights.
+
+---
+
+## 🛠 Technologies Used
 
 - Microsoft Access
 - SQL
 - Relational Database Design
-- Entity Relationship Modeling
+- Entity Relationship Modeling (ERD)
 
-## Example Business Questions Answered
+---
 
-- Which customer spent the most?
-- Which services are booked most frequently?
-- What is the monthly revenue?
-- Which customers qualify as VIP customers?
-- Which customers have never booked an appointment?
+## 📷 Project Documentation
 
-## Skills Demonstrated
+This repository includes:
 
-- SQL Joins
-- Aggregate Functions
-- Subqueries
-- UNION Operations
-- Database Normalization
+- Database schema
+- Entity Relationship Diagram (ERD)
+- Database relationship diagrams
+- Sample tables
+- SQL query examples
+- Final project report
+
+---
+
+## 📚 Skills Demonstrated
+
 - Database Design
+- SQL Development
+- Relational Modeling
+- Data Integrity
+- Database Normalization
 - Business Analytics
+- Problem Solving
+- Data Modeling
+- Analytical Thinking
+
+---
+
+## 👩‍💻 Author
+
+**Wendy Alpizar**
+
+Information & Decision Sciences • Finance Minor  
+University of Illinois Chicago
